@@ -8,7 +8,7 @@ export async function getBrowser(): Promise<Browser> {
     }
 
     browser = await chromium.launch({
-        headless: true,
+        headless: false,
     });
 
     return browser;
